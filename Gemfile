@@ -51,6 +51,8 @@ gem "json", "~> 2.19"
 gem 'faker'
 gem 'pagy'
 gem 'api-pagination'
+gem "devise"
+gem "jwt"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
