@@ -41,6 +41,19 @@ gem "thruster", require: false
 gem "image_processing", "~> 1.2"
 gem "rack-cors"
 
+# Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
+gem "tailwindcss-rails"
+
+gem 'jsonapi-serializer'
+
+# json 3.x drops the positional options arg that ActiveSupport::JSON.decode passes (Rails 8.1)
+gem "json", "~> 2.19"
+gem 'faker'
+gem 'pagy'
+gem 'api-pagination'
+gem "devise"
+gem "jwt"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
