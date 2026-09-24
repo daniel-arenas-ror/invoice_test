@@ -14,7 +14,7 @@ module Api
     end
 
     def show
-      render json: PlanInvoiceSerializer.new(@plan)
+      render json: PlanInvoiceSerializer.new(@plan_invoice)
     end
 
     def update

@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_09_24_025710) do
+ActiveRecord::Schema[8.1].define(version: 2026_09_24_153917) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
   create_table "plan_invoices", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.date "invoice_date"
+    t.integer "payment_status", default: 0
     t.bigint "plan_id", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false

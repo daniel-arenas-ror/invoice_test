@@ -55,17 +55,7 @@ class JwtService
     end
 
     def private_pem
-      ENV["OWL_JWT_PRIVATE_KEY"].presence || dev_key_file
-    end
-
-    def dev_key_file
-      path = Rails.root.join("config/jwt/private_key.pem")
-      FileUtils.mkdir_p(path.dirname)
-      unless File.exist?(path)
-        File.write(path, OpenSSL::PKey::RSA.new(2048).to_pem)
-        File.chmod(0o600, path)
-      end
-      File.read(path)
+      ENV["OWL_JWT_PRIVATE_KEY"].presence
     end
   end
 end
