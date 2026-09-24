@@ -49,6 +49,8 @@ gem 'jsonapi-serializer'
 # json 3.x drops the positional options arg that ActiveSupport::JSON.decode passes (Rails 8.1)
 gem "json", "~> 2.19"
 gem 'faker'
+gem 'pagy'
+gem 'api-pagination'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
