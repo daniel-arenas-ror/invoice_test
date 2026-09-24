@@ -1,7 +1,7 @@
 class ProcessPaymentJob < ApplicationJob
   queue_as :default
 
-  def perform(*args)
-    # Do something later
+  def perform(plan_invoice_id)
+    ProcessPayment.process(plan_invoice_id)
   end
 end
