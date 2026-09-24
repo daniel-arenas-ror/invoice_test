@@ -47,7 +47,7 @@ gem "tailwindcss-rails"
 gem 'jsonapi-serializer'
 
 # json 3.x drops the positional options arg that ActiveSupport::JSON.decode passes (Rails 8.1)
-gem "json", "~> 2.19"
+gem "json", "~> 3.0"
 gem 'faker'
 gem 'pagy'
 gem 'api-pagination'
